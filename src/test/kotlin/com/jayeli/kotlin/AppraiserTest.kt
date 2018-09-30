@@ -1,15 +1,15 @@
-package com.jayeli.kotlin.test
+package com.jayeli.kotlin
 
 import com.jayeli.kotlin.domain.Auction
 import com.jayeli.kotlin.domain.Bid
 import com.jayeli.kotlin.domain.User
 import com.jayeli.kotlin.service.Appraiser
-import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.Test
+import org.junit.Assert.*
 
 
 
-class JunitTest {
+class JunitTest{
 
 
     @Test
@@ -31,8 +31,8 @@ class JunitTest {
         val biggestExpected = 666.66
         val lowestExpected = 300.03
 
-        assertEquals(666.66, auctioneer.biggestOfAll)
-        assertEquals(300.03, auctioneer.lowestOfAll)
+        assertEquals(biggestExpected, auctioneer.biggestOfAll)
+        assertEquals(lowestExpected, auctioneer.lowestOfAll)
 
 
     }
