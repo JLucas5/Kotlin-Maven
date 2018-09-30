@@ -4,12 +4,11 @@ import com.jayeli.kotlin.domain.Auction
 import com.jayeli.kotlin.domain.Bid
 import com.jayeli.kotlin.domain.User
 import com.jayeli.kotlin.service.Appraiser
-import org.junit.Test
-import org.junit.Assert.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Test
 
 
-
-class JunitTest{
+class AppraiserTest{
 
 
     @Test
